@@ -1,4 +1,5 @@
 {
   "version": 2,
-  "name": "cmc-proxy"
+  "name": "cmc-proxy",
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
 }
