@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Nodejs Proxy for CoinMarketCap's new APIs",
   "scripts": {
-    "start": "node proxy.js",
-    "dev": "nodemon proxy.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
