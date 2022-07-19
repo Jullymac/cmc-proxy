@@ -10,8 +10,11 @@ const app = express();
 app.use(morgan("tiny"));
 app.use(cors());
 
-app.get("/*", (req, res) => {
-  let url = `https://pro-api.coinmarketcap.com${req.originalUrl}`;
+app.get("/api/*", (req, res) => {
+  const path = req.originalUrl.replace("api/", "");
+  const url = `https://pro-api.coinmarketcap.com${path}`;
+
+  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
 
   axios
     .get(url, { headers: { "X-CMC_PRO_API_KEY": process.env.CMC_API_KEY } })
