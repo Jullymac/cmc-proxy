@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node proxy.js",
-    "dev": "nodemon proxy.js"
+    "dev": "nodemon proxy.js",
+    "build": "echo 'no build'"
   },
   "repository": {
     "type": "git",
