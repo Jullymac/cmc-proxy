@@ -5,7 +5,7 @@ A Nodejs **"dumb"** Proxy for interact with CoinMarketCap's new APIs.
 Starting with the last version of CoinMarketCap (CMC) APIs released early 2019, it is no longer possible call the CMC's API directly from a client.
 
 Choices are:
-- integrating the API in your backend
+- integrating the [API](https://www.scaler.com/topics/api-full-form/) in your backend
 - create a proxy if you are using a JAM stack app or similar
 
 I dive more into this in my article "[Why I've built a Coinmarketcap proxy](https://medium.com/p/e06c898b5765)", feel free to comment and please point out errors if you find any. I'm a bit rusty :)
