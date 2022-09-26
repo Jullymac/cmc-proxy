@@ -16,7 +16,6 @@ app.get("/api/*", (req, res) => {
 
   res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
 
-  // Force deploy to update CMC_API_KEY
   axios
     .get(url, { headers: { "X-CMC_PRO_API_KEY": process.env.CMC_API_KEY } })
     .then((response) => {
@@ -33,4 +32,4 @@ app.listen(port, () => {
   console.log("Listening on port ", port);
 });
 
-// force deploy
+// Force deploy to update CMC_API_KEY
